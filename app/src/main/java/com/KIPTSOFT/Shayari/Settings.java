@@ -52,17 +52,14 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v) {
 
         Intent myIn;
-        switch (v.getId()) {
-            case R.id.opensource:
+        int id = v.getId();
+        if (id == R.id.opensource) {
                 myIn = new Intent(this, opensourcde.class);
                 startActivity(myIn);
-                break;
-            case R.id.darkmode:
+        } else if (id == R.id.darkmode) {
                 Toast.makeText(this, "Home Screen", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.path:
-                Toast.makeText(this, "Folder:- ShayariStatus In File Manager", Toast.LENGTH_SHORT).show();
-                break;
+        } else if (id == R.id.path) {
+                Toast.makeText(this, "Folder:- MotivationQuotes In File Manager", Toast.LENGTH_SHORT).show();
         }
     }
 }

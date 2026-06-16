@@ -126,15 +126,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(funny).setOnClickListener(this);
         findViewById(night).setOnClickListener(this);
         findViewById(morning).setOnClickListener(this);
-        // findViewById(R.id.poems).setOnClickListener(this);
         findViewById(motivation).setOnClickListener(this);
         findViewById(valentin).setOnClickListener(this);
         findViewById(tru).setOnClickListener(this);
         findViewById(sorry).setOnClickListener(this);
         findViewById(sharabi).setOnClickListener(this);
         findViewById(LinerStatus).setOnClickListener(this);
-
-
 
         Button drawerLayoutm = findViewById(imagetool);
         drawerLayoutm.setOnClickListener(new View.OnClickListener() {
@@ -150,32 +147,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case rateus:
+                int id = item.getItemId();
+                if (id == rateus) {
                         Uri uri1 = Uri.parse("https://play.google.com/store/apps/details?id=com.KIPTSOFT.Shayari");
                         startActivity(new Intent(Intent.ACTION_VIEW, uri1));
-                        break;
-                    case about:
+                } else if (id == about) {
                         Intent myIn1 = new Intent(MainActivity.this, Page_about.class);
                         startActivity(myIn1);
-                        break;
-                    case setting:
+                } else if (id == setting) {
                         Intent myIn2 = new Intent(MainActivity.this, Settings.class);
                         startActivity(myIn2);
-                        break;
-                    case privacy:
+                } else if (id == privacy) {
                         Uri uri = Uri.parse("https://apiyan.blogspot.com/2021/02/ShayariAndStatusPrivacyPolicy.html");
                         startActivity(new Intent(Intent.ACTION_VIEW, uri));
-                        break;
-                    case update:
+                } else if (id == update) {
                         Uri uri2 = Uri.parse("https://play.google.com/store/apps/details?id=com.KIPTSOFT.Shayari");
                         startActivity(new Intent(Intent.ACTION_VIEW, uri2));
-                        break;
-                    case sendshayari:
+                } else if (id == sendshayari) {
                         Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "kiptsoft.appfeedback@gmail.com"));
                         startActivity(intent);
-
-
                 }
                 return false;
             }
@@ -206,99 +196,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
-        Intent myIn;
-        switch (v.getId()) {
-            case love:
-                myIn = new Intent(this, Love.class);
-                startActivity(myIn);
-                break;
-            case beuty:
-                myIn = new Intent(this, beauty.class);
-                startActivity(myIn);
-                break;
-            case bewafa:
-                myIn = new Intent(this, bewafa.class);
-                startActivity(myIn);
-                break;
-            case attitude:
-                myIn = new Intent(this, attitude.class);
-                startActivity(myIn);
-                break;
-            case romantic:
-                myIn = new Intent(this, Romantic.class);
-                startActivity(myIn);
-                break;
-            case life:
-                myIn = new Intent(this, Life.class);
-                startActivity(myIn);
-                break;
-            case yaad:
-                myIn = new Intent(this, Yaad.class);
-                startActivity(myIn);
-                break;
-            case dosti:
-                myIn = new Intent(this, Dosti.class);
-                startActivity(myIn);
-                break;
-            case birthday:
-                myIn = new Intent(this, Birthday.class);
-                startActivity(myIn);
-                break;
-            case dard:
-                myIn = new Intent(this, Dard.class);
-                startActivity(myIn);
-                break;
-            case festival:
-                myIn = new Intent(this, FestivalIsolated.class);
-                startActivity(myIn);
-                break;
-            case desh:
-                myIn = new Intent(this, Desh.class);
-                startActivity(myIn);
-                break;
-            case funny:
-                myIn = new Intent(this, Funny.class);
-                startActivity(myIn);
-                break;
-            case night:
-                myIn = new Intent(this, Night.class);
-                startActivity(myIn);
-                break;
-            case morning:
-                myIn = new Intent(this, Morning.class);
-                startActivity(myIn);
-                break;
-           /* case R.id.poems :
-                myIn = new Intent(this,Poems.class);
-                startActivity(myIn);
-                break;*/
-            case motivation:
-                myIn = new Intent(this, Motivation.class);
-                startActivity(myIn);
-                break;
-            case valentin:
-                myIn = new Intent(this, Valentine.class);
-                startActivity(myIn);
-                break;
-            case tru:
-                myIn = new Intent(this, Truee.class);
-                startActivity(myIn);
-                break;
-            case sorry:
-                myIn = new Intent(this, Sorry.class);
-                startActivity(myIn);
-                break;
-            case sharabi:
-                myIn = new Intent(this, Sharabi.class);
-                startActivity(myIn);
-                break;
-            case LinerStatus:
-                myIn = new Intent(this, Status.class);
-                startActivity(myIn);
-                break;
+        Intent myIn = new Intent(this, QuoteListActivity.class);
+        String category = "success";
+        int id = v.getId();
+        
+        if (id == love) category = "love";
+        else if (id == beuty) category = "beauty";
+        else if (id == bewafa) category = "bewafa";
+        else if (id == attitude) category = "attitude";
+        else if (id == romantic) category = "romantic";
+        else if (id == life) category = "life";
+        else if (id == yaad) category = "yaad";
+        else if (id == dosti) category = "dosti";
+        else if (id == birthday) category = "birthday";
+        else if (id == dard) category = "dard";
+        else if (id == festival) category = "festival";
+        else if (id == desh) category = "desh";
+        else if (id == funny) category = "funny";
+        else if (id == night) category = "night";
+        else if (id == morning) category = "morning";
+        else if (id == motivation) category = "motivation";
+        else if (id == valentin) category = "valentine";
+        else if (id == tru) category = "true";
+        else if (id == sorry) category = "sorry";
+        else if (id == sharabi) category = "sharabi";
+        else if (id == LinerStatus) category = "status";
 
-
-        }
+        myIn.putExtra("CATEGORY", category);
+        startActivity(myIn);
 
     }
 

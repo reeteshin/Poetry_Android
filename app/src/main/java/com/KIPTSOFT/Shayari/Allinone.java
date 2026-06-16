@@ -41,14 +41,14 @@ import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.theartofdev.edmodo.cropper.CropImage;
-import com.theartofdev.edmodo.cropper.CropImageView;
+// import com.theartofdev.edmodo.cropper.CropImage;
+// import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Random;
 
-import top.defaults.colorpicker.ColorPickerPopup;
+// import top.defaults.colorpicker.ColorPickerPopup;
 
 
 public class Allinone extends AppCompatActivity implements AxDialog.AxDialogListener {
@@ -125,6 +125,7 @@ public class Allinone extends AppCompatActivity implements AxDialog.AxDialogList
         gallary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+/*
                 try {
                     CropImage.activity()
 
@@ -134,6 +135,7 @@ public class Allinone extends AppCompatActivity implements AxDialog.AxDialogList
                 {
                     Toast.makeText(Allinone.this, "Pls Select Img Again", Toast.LENGTH_SHORT).show();
                 }
+*/
 
             }
         });
@@ -301,6 +303,7 @@ public class Allinone extends AppCompatActivity implements AxDialog.AxDialogList
                     public boolean onMenuItemClick(MenuItem item) {
                         switch(item.getItemId())
                         {
+/*
                             case R.id.FontColore:
                                 new ColorPickerPopup.Builder(Allinone.this)
                                         .initialColor(Color.RED) // Set initial color
@@ -339,6 +342,7 @@ public class Allinone extends AppCompatActivity implements AxDialog.AxDialogList
                                             }
                                         });
                                      break;
+*/
                         }
                         return false;
                     }
@@ -408,6 +412,7 @@ public class Allinone extends AppCompatActivity implements AxDialog.AxDialogList
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+/*
         if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
             CropImage.ActivityResult result = CropImage.getActivityResult(data);
             if (resultCode == RESULT_OK) {
@@ -419,6 +424,7 @@ public class Allinone extends AppCompatActivity implements AxDialog.AxDialogList
                 Exception error = result.getError();
             }
         }
+*/
     }
 
     public void openDialog() {

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
 
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="App Ki Shayari Likhe" />
+        android:hint="App Ke Quotes Likhe" />
 
 
 

@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Hindi Shayari, Status</string>
+    <string name="app_name">Motivation Quotes</string>
     <string name="navigationstring"><b>KIPTSOFT OFFICIAL</b></string>
     <string-array name="Love">
 
@@ -2314,5 +2314,28 @@ Bas unko padhne wala dil koi chahiye;</item>
         <item>बहुत ख़ास थे कभी हम किसी की नज़रों में ,\nमगर नज़रों के तकाज़े बदलने में देर ही कितनी लगती है।</item>
     </string-array>
 
+    <string-array name="success_quotes">
+        <item>Success is not final, failure is not fatal: it is the courage to continue that counts.</item>
+        <item>The secret of success is to do the common thing uncommonly well.</item>
+        <item>I find that the harder I work, the more luck I seem to have.</item>
+        <item>Success usually comes to those who are too busy to be looking for it.</item>
+        <item>Don\'t be distracted by criticism. Remember, the only taste of success some people get is to take a bite out of you.</item>
+    </string-array>
+
+    <string-array name="morning_quotes">
+        <item>Write it on your heart that every day is the best day in the year.</item>
+        <item>I get up every morning and it\'s going to be a great day. You never know when it\'s going to be over, so I refuse to have a bad day.</item>
+        <item>Today\'s goals: Coffee and kindness. Maybe two coffees, and then kindness.</item>
+        <item>An early-morning walk is a blessing for the whole day.</item>
+        <item>I wake up every morning at nine and grab for the morning paper. Then I look at the obituary page. If my name is not on it, I get up.</item>
+    </string-array>
+
+    <string-array name="motivation_quotes">
+        <item>We cannot solve problems with the kind of thinking we employed when we came up with them.</item>
+        <item>Learn as if you will live forever, live like you will die tomorrow.</item>
+        <item>When you give joy to other people, you get more joy in return. You should give a good thought to happiness that you can give out.</item>
+        <item>It is only when we take chances, when our lives improve. The initial and the most difficult risk that we need to take is to become honest.</item>
+        <item>Nature has given us all the pieces required to achieve exceptional wellness and health, but has left it to us to put these pieces together.</item>
+    </string-array>
 
 </resources>

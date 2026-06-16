@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.KIPTSOFT.Shayari">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -19,18 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.S7">
-        <activity android:name=".FHoli"></activity>
-        <activity android:name=".FDewali" />
-        <activity android:name=".FestivalIsolated" />
-        <activity android:name=".twolinestatus" />
-        <activity android:name=".Funnystatus" />
-        <activity android:name=".GirlAttitude" />
         <activity android:name=".Settings" />
         <activity android:name=".opensourcde" />
-        <activity android:name=".LifeS" />
-        <activity android:name=".RandomS" />
-        <activity android:name=".DardEdilS" />
-        <activity android:name=".MahakalS" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -39,46 +28,23 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity
-            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat" />
-        <activity android:name=".attitudestatus" />
-        <activity android:name=".Status" />
-        <activity android:name=".Miss" />
-        <activity android:name=".Sharabi" />
-        <activity android:name=".Sorry" />
-        <activity android:name=".Truee" />
-        <activity android:name=".Valentine" />
-        <activity android:name=".Motivation" />
-        <activity android:name=".Poems" />
-        <activity android:name=".Morning" />
-        <activity android:name=".Night" />
-        <activity android:name=".Funny" />
-        <activity android:name=".Desh" />
-        <activity android:name=".Festival" />
-        <activity android:name=".Dard" />
-        <activity android:name=".Birthday" />
-        <activity android:name=".Dosti" />
-        <activity android:name=".Yaad" />
-        <activity android:name=".Life" />
-        <activity android:name=".attitude" />
-        <activity android:name=".beauty" />
+
+
         <activity
             android:name=".Allinone"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.about" />
-        <activity android:name=".Romantic" />
-        <activity android:name=".Sad" />
-        <activity android:name=".Love" />
+
         <activity
             android:name=".Page_about"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.about" />
         <activity android:name=".nav.Privacy_Policy" />
         <activity android:name=".nav.nav_feedback" />
-        <activity android:name=".bewafa" />
+
+        <activity android:name=".QuoteListActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".sp_screen">
+        <activity android:name=".sp_screen" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

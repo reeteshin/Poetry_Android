@@ -56,41 +56,33 @@ public class Status extends AppCompatActivity implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         Intent myIn;
-        switch (v.getId()) {
-            case statusc1:
+        int id = v.getId();
+        if (id == statusc1) {
                 myIn = new Intent(this, attitudestatus.class);
                 startActivity(myIn);
-                break;
-            case mahakals:
+        } else if (id == mahakals) {
                 myIn = new Intent(this, MahakalS.class);
                 startActivity(myIn);
-                break;
-            case dardedills:
+        } else if (id == dardedills) {
                 myIn = new Intent(this, DardEdilS.class);
                 startActivity(myIn);
-                break;
-            case randoms:
+        } else if (id == randoms) {
                 myIn = new Intent(this, RandomS.class);
                 startActivity(myIn);
-                break;
-            case lifes:
+        } else if (id == lifes) {
                 myIn = new Intent(this, LifeS.class);
                 startActivity(myIn);
-                break;
-            case girlattitude:
+        } else if (id == girlattitude) {
                 myIn = new Intent(this, GirlAttitude.class);
                 startActivity(myIn);
-                break;
-            case funnystatus:
+        } else if (id == funnystatus) {
                 myIn = new Intent(this, Funnystatus.class);
                 startActivity(myIn);
-                break;
-            case twolinestatus:
+        } else if (id == twolinestatus) {
                 myIn = new Intent(this, twolinestatus.class);
                 startActivity(myIn);
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + v.getId());
+        } else {
+                throw new IllegalStateException("Unexpected value: " + id);
         }
     }
 }

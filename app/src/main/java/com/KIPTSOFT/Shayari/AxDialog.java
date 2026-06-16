@@ -20,13 +20,13 @@ public class AxDialog extends AppCompatDialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(),R.style.Widget_MaterialComponents_ActionBar_Solid);
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.layout_dialog, null);
      //   View view1= inflater.inflate(R.layout.activity_allinone,null);
         builder.setView(view)
 
-                .setTitle("Shayari Status")
+                .setTitle("Motivation Quotes")
 
                 .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                     @Override

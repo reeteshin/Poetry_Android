@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    namespace 'com.KIPTSOFT.Shayari'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.KIPTSOFT.Shayari"
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdk 34
         versionCode 16
         versionName "2.6"
 
@@ -23,9 +23,50 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            java {
+                exclude 'com/KIPTSOFT/Shayari/Birthday.java'
+                exclude 'com/KIPTSOFT/Shayari/Dard.java'
+                exclude 'com/KIPTSOFT/Shayari/DardEdilS.java'
+                exclude 'com/KIPTSOFT/Shayari/Desh.java'
+                exclude 'com/KIPTSOFT/Shayari/Dosti.java'
+                exclude 'com/KIPTSOFT/Shayari/FDewali.java'
+                exclude 'com/KIPTSOFT/Shayari/FHoli.java'
+                exclude 'com/KIPTSOFT/Shayari/Festival.java'
+                exclude 'com/KIPTSOFT/Shayari/FestivalIsolated.java'
+                exclude 'com/KIPTSOFT/Shayari/Funny.java'
+                exclude 'com/KIPTSOFT/Shayari/Funnystatus.java'
+                exclude 'com/KIPTSOFT/Shayari/GirlAttitude.java'
+                exclude 'com/KIPTSOFT/Shayari/Life.java'
+                exclude 'com/KIPTSOFT/Shayari/LifeS.java'
+                exclude 'com/KIPTSOFT/Shayari/Love.java'
+                exclude 'com/KIPTSOFT/Shayari/MahakalS.java'
+                exclude 'com/KIPTSOFT/Shayari/Miss.java'
+                exclude 'com/KIPTSOFT/Shayari/Morning.java'
+                exclude 'com/KIPTSOFT/Shayari/Motivation.java'
+                exclude 'com/KIPTSOFT/Shayari/Night.java'
+                exclude 'com/KIPTSOFT/Shayari/Poems.java'
+                exclude 'com/KIPTSOFT/Shayari/RandomS.java'
+                exclude 'com/KIPTSOFT/Shayari/Romantic.java'
+                exclude 'com/KIPTSOFT/Shayari/Sad.java'
+                exclude 'com/KIPTSOFT/Shayari/Sharabi.java'
+                exclude 'com/KIPTSOFT/Shayari/Sorry.java'
+                exclude 'com/KIPTSOFT/Shayari/Status.java'
+                exclude 'com/KIPTSOFT/Shayari/Truee.java'
+                exclude 'com/KIPTSOFT/Shayari/Valentine.java'
+                exclude 'com/KIPTSOFT/Shayari/Yaad.java'
+                exclude 'com/KIPTSOFT/Shayari/attitude.java'
+                exclude 'com/KIPTSOFT/Shayari/attitudestatus.java'
+                exclude 'com/KIPTSOFT/Shayari/beauty.java'
+                exclude 'com/KIPTSOFT/Shayari/bewafa.java'
+                exclude 'com/KIPTSOFT/Shayari/twolinestatus.java'
+            }
+        }
+    }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
 }
 
@@ -36,20 +77,18 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation "androidx.cardview:cardview:1.0.0"
     implementation "androidx.drawerlayout:drawerlayout:1.1.1"
-    //noinspection GradleCompatible
-    implementation 'com.android.support:design:28.0.0'
+    // Removed com.android.support:design:28.0.0
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'com.google.firebase:firebase-ads:19.8.0'
     implementation 'com.google.firebase:firebase-analytics:18.0.2'
     implementation 'com.google.firebase:firebase-messaging:21.1.0'
     implementation 'com.google.firebase:firebase-inappmessaging-display:19.1.5'
     testImplementation 'junit:junit:4.+'
-    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
-    implementation 'com.github.duanhong169:colorpicker:1.1.6'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     implementation 'com.airbnb.android:lottie:3.7.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.android.gms:play-services-ads:19.8.0'
+    implementation 'androidx.work:work-runtime:2.8.1'
 
 
 

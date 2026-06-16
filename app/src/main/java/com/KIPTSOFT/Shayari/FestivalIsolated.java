@@ -51,17 +51,15 @@ public class FestivalIsolated extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
         Intent myIn;
-        switch (v.getId()) {
-            case dewali:
+        int id = v.getId();
+        if (id == dewali) {
                 myIn = new Intent(this, FDewali.class);
                 startActivity(myIn);
-                break;
-            case holi:
+        } else if (id == holi) {
                 myIn = new Intent(this, FHoli.class);
                 startActivity(myIn);
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + v.getId());
+        } else {
+                throw new IllegalStateException("Unexpected value: " + id);
         }
     }
 }

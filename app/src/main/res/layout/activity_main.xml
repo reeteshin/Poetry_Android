@@ -162,7 +162,7 @@
                 android:layout_margin="10dp"
                 android:fontFamily="@font/font3"
                 android:paddingTop="13dp"
-                android:text="Shayari Collection"
+                android:text="Motivation Collection"
                 android:textSize="17dp"
                 android:textStyle="bold" />
 
